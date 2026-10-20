@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbrli:xbrl
+  xmlns:xbrli="http://www.xbrl.org/2003/instance"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:in-gaap="http://www.mca.gov.in/XBRL/2016/08/29/in-gaap">
+  <link:schemaRef xlink:type="simple" xlink:href="https://example.test/ind-as-2024.xsd" />
+  <xbrli:context id="OneD">
+    <xbrli:entity><xbrli:identifier scheme="https://www.mca.gov.in/">L00000TEST</xbrli:identifier></xbrli:entity>
+    <xbrli:period><xbrli:startDate>2024-10-01</xbrli:startDate><xbrli:endDate>2024-12-31</xbrli:endDate></xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="PriorD">
+    <xbrli:entity><xbrli:identifier scheme="https://www.mca.gov.in/">L00000TEST</xbrli:identifier></xbrli:entity>
+    <xbrli:period><xbrli:startDate>2024-07-01</xbrli:startDate><xbrli:endDate>2024-09-30</xbrli:endDate></xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="SegmentD">
+    <xbrli:entity><xbrli:identifier scheme="https://www.mca.gov.in/">L00000TEST</xbrli:identifier></xbrli:entity>
+    <xbrli:period><xbrli:startDate>2024-10-01</xbrli:startDate><xbrli:endDate>2024-12-31</xbrli:endDate></xbrli:period>
+    <xbrli:scenario><xbrli:identifier scheme="segment">decorative-paints</xbrli:identifier></xbrli:scenario>
+  </xbrli:context>
+  <xbrli:unit id="INR"><xbrli:measure>iso4217:INR</xbrli:measure></xbrli:unit>
+  <xbrli:unit id="pure"><xbrli:measure>xbrli:pure</xbrli:measure></xbrli:unit>
+  <in-gaap:DateOfEndOfReportingPeriod contextRef="OneD">2024-12-31</in-gaap:DateOfEndOfReportingPeriod>
+  <in-gaap:NatureOfReportStandaloneConsolidated contextRef="OneD">Consolidated</in-gaap:NatureOfReportStandaloneConsolidated>
+  <in-gaap:WhetherResultsAreAuditedOrUnaudited contextRef="OneD">Unaudited</in-gaap:WhetherResultsAreAuditedOrUnaudited>
+  <in-gaap:ReportingQuarter contextRef="OneD">Third quarter</in-gaap:ReportingQuarter>
+  <in-gaap:RevenueFromOperations contextRef="PriorD" unitRef="INR" decimals="0">80000000000</in-gaap:RevenueFromOperations>
+  <in-gaap:RevenueFromOperations contextRef="SegmentD" unitRef="INR" decimals="0">99999999999</in-gaap:RevenueFromOperations>
+  <in-gaap:RevenueFromOperations contextRef="OneD" unitRef="INR" decimals="0">85494400000</in-gaap:RevenueFromOperations>
+  <in-gaap:FinanceCosts contextRef="OneD" unitRef="INR" decimals="0">480000000</in-gaap:FinanceCosts>
+  <in-gaap:DepreciationDepletionAndAmortisationExpense contextRef="OneD" unitRef="INR" decimals="0">1900000000</in-gaap:DepreciationDepletionAndAmortisationExpense>
+  <in-gaap:ProfitBeforeExceptionalItemsAndTax contextRef="OneD" unitRef="INR" decimals="0">14200000000</in-gaap:ProfitBeforeExceptionalItemsAndTax>
+  <in-gaap:ProfitBeforeTax contextRef="OneD" unitRef="INR" decimals="0">14000000000</in-gaap:ProfitBeforeTax>
+  <in-gaap:TaxExpense contextRef="OneD" unitRef="INR" decimals="0">2900000000</in-gaap:TaxExpense>
+  <in-gaap:ProfitOrLossAttributableToOwnersOfParent contextRef="OneD" unitRef="INR" decimals="0">11104800000</in-gaap:ProfitOrLossAttributableToOwnersOfParent>
+  <in-gaap:BasicEarningsLossPerShareFromContinuingAndDiscontinuedOperations contextRef="OneD" unitRef="pure" decimals="2">11.58</in-gaap:BasicEarningsLossPerShareFromContinuingAndDiscontinuedOperations>
+  <in-gaap:DeclarationOfUnmodifiedOpinionOrStatementOnImpactOfAuditQualification contextRef="OneD">Not applicable</in-gaap:DeclarationOfUnmodifiedOpinionOrStatementOnImpactOfAuditQualification>
+</xbrli:xbrl>
