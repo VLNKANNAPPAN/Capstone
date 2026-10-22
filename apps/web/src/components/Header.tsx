@@ -10,15 +10,11 @@ interface HeaderProps {
 }
 
 const pages = [
-  ["overview", "Overview"],
-  ["research", "Research"],
+  ["overview", "Home"],
+  ["research", "Explore"],
   ["portfolio", "Portfolio"],
-  ["bonds", "Bonds"],
-  ["market", "Market"],
-  ["analysis", "Analysis"],
-  ["learn", "University"],
-  ["evidence", "Evidence"],
-  ["pipeline", "Admin"],
+  ["learn", "Learn"],
+  ["pipeline", "Data status"],
 ];
 
 export function Header({ connected, refreshing, generatedAt, onRefresh, currentPage }: HeaderProps) {
@@ -29,8 +25,8 @@ export function Header({ connected, refreshing, generatedAt, onRefresh, currentP
           <Database size={18} />
         </div>
         <div>
-          <div className="eyebrow">MarketLab</div>
-          <h1>Learn. Inspect. Decide.</h1>
+          <div className="eyebrow">MarketLab · Demo</div>
+          <h1>Data. Metrics. Decisions.</h1>
         </div>
       </div>
 
